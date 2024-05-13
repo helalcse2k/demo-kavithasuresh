@@ -1,9 +1,10 @@
 pipeline {
     agent any
     stages {      
-        stage('hello') {
+        stage('Building') {
             steps {
-               sh 'cat test.txt'
+               echo 'Building.......'
+                sh './hello.sh'
             }
         }
     }
